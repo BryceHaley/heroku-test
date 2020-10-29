@@ -1,1 +1,1 @@
-web: gunicorn dash-pie:server
+web: gunicorn app:server
