@@ -9,7 +9,7 @@ import pandas as pd
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+server = app.server
 
 df_house= pd.read_csv(os.path.join('resources','house_vis_minorities.csv'))
 df_senate= pd.read_csv(os.path.join('resources','senate_vis_minorities.csv'))
